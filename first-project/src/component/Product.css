@@ -1,0 +1,83 @@
+.contact-section{
+    display: flex;
+    height: 530px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6,#779e);
+}
+.contact-form{
+    max-width: 600px;
+    /* max-height: 700px; */
+    /* width:100%; */
+    height: 450px;
+    background-color: #fff;
+    padding: 25px 35px;
+    border-radius: 6px;
+    position: relative;
+}
+.contact-form .title{
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+    
+}
+.contact-form .title::before{
+    content:"";
+    width:60px;
+    height: 2px;
+    background: rgb(107, 102, 102);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.contact-form form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-transform:capitalize;
+}
+form .user-details .input-box{
+    width:calc(100%/2 - 20px);
+    margin: 10px 0;
+}
+.user-details .input-box .detail{
+display: block;
+font-size: 20px;
+font-weight: 500;
+
+}
+.user-details .input-box input{
+    height:40px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid black;
+    padding-left: 15px;
+    font-size: 15px;
+    border-bottom-width:2px ;
+    transition: all 0.3s ease;
+}
+.user-details .input-box input:focus{
+    border-color: linear-gradient(120deg,#82888b,#ffffff,rgba(74, 74, 83, 0.933));
+}
+.message-field{
+    max-height: 100px;
+    width:calc(100%*2 + 40px);
+    /* background: linear-gradient(120deg,#82888b,#9b59b6,#779e); */
+    padding:20px;
+    border-bottom-width:2px ;
+}
+.submit-btn{
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    margin: 20px 0px;
+    
+}
+.button{
+    padding: 4px;
+    width: 100px;
+}
+.button:hover{
+    background:linear-gradient(120deg,#82888b,#ffffff,rgba(74, 74, 83, 0.933)); 
+}
